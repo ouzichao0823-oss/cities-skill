@@ -70,18 +70,7 @@ Skill 不会一次性把所有内容塞入上下文。按照用户当前所处�
 ## 安装与使用
 
 ### 安装
-
-Skill 已安装在以下位置：
-
-```
-C:\Users\lenovo\.claude\skills\cities-knowledge-graph\
-```
-
-同时备份至：
-
-```
-D:\研一项目\BaiduSyncdisk\研一项目\毕业论文开题\cities skill\cities-knowledge-graph\
-```
+直接安装
 
 ### 使用方式
 
@@ -118,30 +107,7 @@ D:\研一项目\BaiduSyncdisk\研一项目\毕业论文开题\cities skill\citie
 
 ## 数据基础
 
-基于本地 Zotero 论文库：`C:\Users\lenovo\Zotero\`
-
-- **~852 篇** SCI Q1 期刊论文
-- **~30 种** 城市规划领域顶刊
-- **1304 个** 本地 PDF
-- 覆盖交通、地理、规划、环境、住房、经济等全谱系
-
-主要期刊覆盖：
-
-| 期刊 | 论文数 |
-|------|--------|
-| Cities | 149 |
-| Journal of Transport Geography | 138 |
-| Transportation Research Part D | 95 |
-| Urban Studies | 51 |
-| Travel Behaviour and Society | 42 |
-| Applied Geography | 34 |
-| Environment and Planning 系列 | 30 |
-| Urban Geography | 22 |
-| Habitat International | 19 |
-| Transport Policy | 19 |
-| Nature Cities | 10 |
-| Annals of AAG | 10 |
-| 其他 Q1 期刊 | ~220 |
+基于本地 Zotero 论文库
 
 ## 设计原则
 
