@@ -1,0 +1,9 @@
+# User's Zotero path (local only, not shared)
+corpus/zotero-path.txt
+
+# User's research constitution (personal, not shared)
+constitution.md.active
+
+# OS files
+.DS_Store
+Thumbs.db
