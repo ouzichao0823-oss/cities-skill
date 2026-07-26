@@ -1,158 +1,33 @@
 # Cities Manuscript Engine
 
-**城市规划领域 Q1 英文论文的端到端研究系统**——以研究宪法为核心的螺旋循环架构。
+A Claude Code skill for urban studies research paper production — from experimental design through literature review to manuscript writing.
 
-不是写作助手。是研究设计引擎：从模糊兴趣到可发表论文，每一步都在验证和修正你的研究设计。
+## Versions
 
----
+| Version | Directory | Description |
+|---------|-----------|-------------|
+| **v2.0** | [`v2.0/`](v2.0/) | Spiral-loop architecture with constitution-driven research engine. Six entry points, strategic briefs, 7 urban themes, Cities journal guide, Zotero corpus bridge. **(Current)** |
+| **v1.0** | [`v1.0/`](v1.0/) | Original linear pipeline. Objects taxonomy, core knowledge base, thematic modules, writing guides. |
 
-## 核心理念
+## Quick Start
 
-写一篇能发在 *Cities*、*Urban Studies*、*Journal of Transport Geography* 等 Q1 期刊上的论文，真正的瓶颈不是英文写作，而是：
+1. Install as a Claude Code skill — copy to `~/.claude/skills/cities-knowledge-graph/`
+2. Read [`v2.0/SETUP.md`](v2.0/SETUP.md) to connect your Zotero library
+3. Start with: "I want to study [your topic]" — the skill routes you to the right entry point
 
-1. **问题定义**：怎么把观察到的城市现象变成一个国际审稿人认为有理论贡献的问题？
-2. **实验设计**：比较什么？怎么排除替代解释？方法为什么是这个而不是那个？
-3. **文献定位**：你的论文在已有文献中的唯一坐标是什么？
-4. **中国叙事→国际议题**：中国的制度特征如何框定为方法论优势？
-5. **写作一致性**：从标题到结论，是否在回应同一条逻辑链？
-
----
-
-## 架构：宪法驱动的螺旋循环
+## Architecture (v2.0)
 
 ```
-研究宪法 (constitution.md) ← 整个研究的"大脑"
-        │
-   ┌────┼────┐
-   │    │    │
-   ▼    ▼    ▼
- 入口A 入口B 入口C  ← 从任何阶段进入循环
- (兴趣) (数据) (文献)
-   │    │    │
-   └────┼────┘
-        │
-   ┌────┼────┐
-   │    │    │
-   ▼    ▼    ▼
- 入口D 入口E 入口F
- (结果) (写作) (审查)
-        │
-        ▼
-  回到研究宪法（更新状态）
+constitution.md  ←  every conversation starts and ends here
+       │
+       ├── Entry A: Vague interest → RQ generation
+       ├── Entry B: Have data → capability matching
+       ├── Entry C: Have literature → competitive positioning
+       ├── Entry D: Have results → reverse inference
+       ├── Entry E: Write section → strategic brief → execute
+       └── Entry F: Full audit → consistency check
 ```
 
-### 六个循环入口
-
-| 入口 | 场景 | 功能 |
-|------|------|------|
-| A: 模糊兴趣 | "我想研究XX" | 拆解概念 → 匹配理论 → 生成研究问题 |
-| B: 有数据 | "我有XX数据" | 数据能力画像 → 匹配议题 → 竞品扫描 |
-| C: 读文献 | "我读了一些论文" | 竞品矩阵 → Gap 类型判断 → 精确陈述 |
-| D: 有结果 | "我跑出了这个结果" | 结果-宪法一致性诊断 → 反向推导 |
-| E: 写章节 | "帮我写引言/讨论" | 宪法→战略简报→约束执行 |
-| F: 审查 | "帮我检查" | 全篇一致性审查 → 断裂点修复 |
-
-### 研究宪法
-
-宪法的 9 个字段记录了你研究的完整状态。它不要求一次填完——`unknown` 是合法状态。每次对话可能更新一个字段。
-
-宪法字段：种子 → 核心命题 → 理论透镜 → 逻辑链 → 竞品坐标 → 贡献声明 → 论证地图 → 循环日志 → 本轮议程
-
----
-
-## 模块
-
-### 议题知识库（6个主题）
-- **不平等与空间正义** — 12个子议题（隔离、绅士化、交通公平、环境正义...）
-- **流动性与交通** — 12个子议题（可达性、15分钟城市、微出行、TOD...）
-- **环境可持续** — 10个子议题（热岛、绿地可达性、碳排放、环境绅士化...）
-- **城市韧性** — 8个子议题（社会韧性、气候适应、恢复力测度...）
-- **住房与城市发展** — 10个子议题（绅士化、居住隔离、保障房、城中村...）
-- **健康与福祉** — 8个子议题（建成环境-健康、通勤-心理、健康老龄化...）
-
-### 研究设计模式库
-6种可复用的定量城市研究设计模式（暴露-响应、差距-分解、阈值-非线性、分类-对比、处理-对照）
-
-### 期刊风格手册
-- ***Cities* 期刊风格** — 基于 100+ 篇该期刊论文的实际写作模式提取
-
-### 写作工具
-- 战略简报生成（引言/文献综述/结果/讨论/结论）
-- 中国叙事→国际议题转换
-- 英文润色桥接（配合 nature-polishing 技能使用）
-
----
-
-## 安装
-
-### 1. 作为 Claude Code Skill 安装
-
-```bash
-# 克隆或下载本仓库到 Claude Code skills 目录
-cp -r cities-knowledge-graph/ ~/.claude/skills/
-```
-
-### 2. 连接你的 Zotero 文献库
-
-本 Skill 的核心能力之一是**基于你本地的 Zotero 论文库进行竞品分析和文献定位**。
-
-设置步骤：
-1. 确保 Zotero 已安装，论文库中有城市规划相关期刊论文
-2. 找到你的 Zotero 数据目录（Zotero → Preferences → Advanced → Data Directory Location）
-3. 在 Skill 首次使用时，告知你的 Zotero 数据目录路径
-4. 查询前需要复制 `zotero.sqlite`（Zotero 运行时会锁定该文件）
-
-详细的 Zotero 设置和查询指南见 `corpus/zotero-query.md`。
-
-### 3. 自定义议题
-
-复制 `themes/_template.md` → 按模板填写新议题 → 在 `SKILL.md` 路由表中添加一行。
-
----
-
-## 与其他 Skill 配合
-
-本 Skill 是**编排中心**（大脑），在具体执行上桥接到专业 Skill：
-
-| 场景 | 推荐 Skill |
-|------|-----------|
-| 深度英文润色 | nature-polishing |
-| 大规模文献检索 | nature-academic-search |
-| 论文图表制作 | nature-figure |
-| Nature 格式引用插入 | nature-citation |
-| Nature Cities 格式草稿 | urban-study-manuscript |
-
----
-
-## 文件结构
-
-```
-cities-knowledge-graph/
-├── SKILL.md                  # 路由
-├── constitution.md           # 研究宪法（核心）
-├── objects.md                # 研究对象分类学
-├── entries/                  # 六个循环入口
-├── briefs/                   # 战略简报（写作前生成）
-├── themes/                   # 议题知识库
-├── core/                     # 核心知识（逻辑链、设计模式、竞品分析...）
-├── corpus/                   # Zotero 文献库集成
-├── journals/                 # 期刊风格手册
-├── writing/                  # 写作执行层
-└── examples/                 # 完整循环演示
-```
-
----
-
-## 设计原则
-
-1. **宪法第一**：每次对话从宪法开始，到宪法结束。
-2. **模型已知的不重复**：不教模型什么是基尼系数或什么是空间回归——它已经懂了。
-3. **战略简报约束执行**：写作前生成"该写什么、不该写什么"的指令——防幻觉、防跑题。
-4. **Zotero 是引用来源**：引用的每一篇论文必须在文献库中可验证。
-5. **不重复已有 Skill**：润色/图表/引用/检索交给专业 Skill，本 Skill 保障方向的正确性。
-
----
-
-## 许可
+## License
 
 MIT
