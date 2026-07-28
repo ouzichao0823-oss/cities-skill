@@ -20,17 +20,17 @@
 | # | 子议题 | 核心 RQ 模板 | 典型研究对象 | 常用数据 | Zotero 参考 |
 |---|-------|------------|------------|--------|-----------|
 | 1 | 收入不平等与空间分异 | "收入不平等的空间表现如何随[尺度/制度]变化？" | 人的收入+位置 | 普查、手机信令 | Lu et al. 2021 (Cities) |
-| 2 | 居住隔离 | "[某群体]的居住隔离程度、机制与后果是什么？" | 人的社会经济属性+居住地 | 普查、人口网格 | Maloutas 2024 (NC), [search your Zotero] |
-| 3 | 活动空间隔离 | "日常活动中的隔离是否比居住隔离更严重？" | 人的位置+移动 | 手机信令、GPS | [search your Zotero] |
-| 4 | 交通公平 | "交通资源和服务在不同群体间的分配是否公平？" | 人的社会经济属性+交通可达性 | 公交卡、手机信令 | [search your Zotero] |
-| 5 | 环境正义 | "环境优劣在空间中是否公平分布？" | 人的社会经济属性+环境暴露 | 遥感、监测站、POI | [search your Zotero] |
-| 6 | 绅士化与替代 | "资本进入如何改变社区构成？谁被替代？去哪了？" | 人的位置变化+设施升级 | POI、房价、手机信令 | [search your Zotero] |
-| 7 | 住房可负担性 | "住房成本如何在不同群体和空间中差异化？" | 人的收入+住房价格 | 房价、普查 | [search your Zotero] |
-| 8 | 公共服务可达性公平 | "弱势群体是否能平等获取公共服务？" | 人的位置+设施分布 | POI、手机信令 | [search your Zotero] |
-| 9 | 数字鸿沟 | "数字接入和使用的空间不平等如何表现？" | 人的数字行为 | 社交媒体、APP数据 | [search your Zotero] |
-| 10 | 性别空间不平等 | "性别如何塑造空间体验和移动模式的差异？" | 人的性别+位置+感受 | GPS、调查、街景 | [search your Zotero] |
-| 11 | 代际不平等 | "年龄如何调节城市空间中的机会和约束？" | 人的年龄+移动+健康 | 手机信令、调查 | [search your Zotero] |
-| 12 | 移民/流动人口融入 | "外来人口在居住/活动/社交上如何融入城市？" | 人的户口/出生地+空间行为 | 手机信令、普查 | [search your Zotero] |
+| 2 | 居住隔离 | "[某群体]的居住隔离程度、机制与后果是什么？" | 人的社会经济属性+居住地 | 普查、人口网格 | Maloutas 2024 (NC), C42, C81 |
+| 3 | 活动空间隔离 | "日常活动中的隔离是否比居住隔离更严重？" | 人的位置+移动 | 手机信令、GPS | C42(Tokyo), C70(Beijing), C5 |
+| 4 | 交通公平 | "交通资源和服务在不同群体间的分配是否公平？" | 人的社会经济属性+交通可达性 | 公交卡、手机信令 | C4, C52, C83 |
+| 5 | 环境正义 | "环境优劣在空间中是否公平分布？" | 人的社会经济属性+环境暴露 | 遥感、监测站、POI | C36, C46 |
+| 6 | 绅士化与替代 | "资本进入如何改变社区构成？谁被替代？去哪了？" | 人的位置变化+设施升级 | POI、房价、手机信令 | C21, C15 |
+| 7 | 住房可负担性 | "住房成本如何在不同群体和空间中差异化？" | 人的收入+住房价格 | 房价、普查 | C39 |
+| 8 | 公共服务可达性公平 | "弱势群体是否能平等获取公共服务？" | 人的位置+设施分布 | POI、手机信令 | C36(Shanghai) |
+| 9 | 数字鸿沟 | "数字接入和使用的空间不平等如何表现？" | 人的数字行为 | 社交媒体、APP数据 | C37 |
+| 10 | 性别空间不平等 | "性别如何塑造空间体验和移动模式的差异？" | 人的性别+位置+感受 | GPS、调查、街景 | C27(Zhuhai), C13 |
+| 11 | 代际不平等 | "年龄如何调节城市空间中的机会和约束？" | 人的年龄+移动+健康 | 手机信令、调查 | C7, C56, C35 |
+| 12 | 移民/流动人口融入 | "外来人口在居住/活动/社交上如何融入城市？" | 人的户口/出生地+空间行为 | 手机信令、普查 | C21, C43, C12 |
 
 > 中国语境核心变量：**户口(hukou)**。在几乎所有中国城市不平等研究中，户口是不可绕过的制度变量。
 
@@ -85,3 +85,54 @@
 **中国语境特需**：hukou (户口), urban villages (城中村), affordable housing (保障房), floating population (流动人口), land-based fiscal model (土地财政)
 
 **避免**：空洞的"inequality is serious"、笼统的"government should..."、带有贬义的"slum"（用 informal settlement/low-income neighborhood）
+
+---
+
+## 文献综述写作模式（从 Zotero 库中 mobility × inequality 交叉论文摘要提取）
+
+### 模式 1：隔离的层级推进——居住→活动空间→经历
+
+不平等论文论述"隔离"时的标准三层推进：
+```
+层 1: "Socio-spatial segregation has long been a critical subject in urban studies."
+层 2: "The literature has traditionally focused on residential segregation...However, this approach overlooks the complexity of segregation experienced in daily mobility."
+层 3: "In recent decades, increasing attention has been given to the segregation experienced in activity spaces beyond the well-examined residential locations."
+→ 居住隔离 → 活动空间隔离 → 经历隔离，每一层都是对前一层的修正
+```
+
+### 模式 2：不平等机制的交叉句式
+
+```
+"A large body of studies revealed that disadvantaged groups can access more opportunities for cross-group interaction by engaging in activities outside of their residential areas."
+→ 先承认已有发现（弱势群体在居住地外有更多跨群体互动机会）
+→ 然后追问 "This study extends this body of research by examining whether [limiting condition]."
+→ 核心句式: "whether [beneficial mechanism] holds under [constraining condition]"
+```
+
+### 模式 3：群体差异的维度列举
+
+```
+"[Group A] are more [outcome] than [Group B]."
+"Less affluent groups display especially low [variation/mobility/diversity]."
+→ 不写 "there are significant differences between groups"
+→ 而是精确命名哪个群体在哪个维度上的差异方向
+```
+
+### 模式 4：空间不平等的时间维度
+
+```
+"These findings challenge the assumption that [spatial pattern] is static—[inequality] varies systematically by [time of day / day of week / season]."
+→ 将时间引入空间不平等分析的核心句式
+```
+
+### 模式 5：交叉术语搭配
+
+| 搭配 | 使用场景 |
+|------|---------|
+| `systematic disparities in access to urban opportunities` | 活动空间分异的定义 |
+| `unequal distribution of [X] across micro-geographic units` | 隔离的精细化测度 |
+| `experienced [X] segregation` (vs. residential segregation) | 区分经历隔离与居住隔离 |
+| `the persistence of spatial constraint even as nominal accessibility increases` | 描述可达性改善未转化为实际使用 |
+| `segregation levels vary by activity-space type` | 区分不同活动类型的隔离程度 |
+| `socio-spatial exclusion mechanisms` | 替代笼统的"inequality" |
+| `the unequal geographic extent, internal structure, and spatial-opportunity access` | 活动空间分异的三个维度 |

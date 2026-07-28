@@ -4,6 +4,20 @@
 
 ---
 
+## ⚠️ 强制前置检查
+
+```
+1. 宪法 §2 核心命题（逐字复制）: "[从constitution.md §2复制]"
+2. 本研究的核心发现（≤3个，从Result提取）:
+   - 发现1: [一句话]
+   - 发现2: [一句话]
+   - 发现3: [一句话]
+3. 自检:
+   □ 发现是否来自Result（不是凭空写的）？
+   □ 讨论是否回到了引言提出的Gap？
+   □ 政策段是否命名了具体行动者+行动？
+```
+
 ## 核心任务
 
 让审稿人读完后说："我理解了这些发现对我已知的文献意味着什么，以及这个城市应该为此做什么。"
@@ -122,8 +136,8 @@ Specifically, [concrete recommendation grounded in your finding]."
 
 基于宪法定制:
   如果理论透镜是空间正义 → "Planning interventions should prioritize [specific group/area]"
-  如果理论透镜是环境正义 → "Environmental planning should target [specific areas/groups]
-  based on [your finding about unequal distribution]"
+  如果理论透镜是时间地理学 → "Time-related policies (flexible work hours, transit scheduling)
+  should account for [your finding about time constraints]"
   如果你做的是交通 → 命名 transit agencies / transport planners
   如果你做的是住房 → 命名 housing authorities / municipal planning departments
 ```

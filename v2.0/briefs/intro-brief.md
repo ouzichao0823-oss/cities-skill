@@ -1,96 +1,166 @@
 # 引言战略简报
 
-> 基于宪法生成。约束模型：该写什么、不该写什么、怎么和宪法保持一致。
+> 通用模板。期刊特调见 `journals/<journal>.md`。
 
 ---
 
-## 核心任务
+## ⚠️ 强制前置检查（写任何引言内容前必须完成）
 
-引言的功能不是"介绍背景"，而是**在 3 个 Move 中建立你的论文是不可或缺的**。
-
----
-
-## 战略参数（从宪法提取）
-
-写入前确认：
+**在写出引言第一句话之前，必须向用户输出以下三项内容。未完成不准开始写。**
 
 ```
-核心命题: [宪法§2]
-理论透镜: [宪法§3]
-Gap 类型: [宪法§5]
-竞品坐标: [宪法§5 — 最接近的 3-5 篇论文]
-贡献类型: [宪法§6]
+1. 宪法 §2 核心命题（逐字复制）: "[从constitution.md §2复制]"
+
+2. 本文要回答的两个问题（≤50字/个）:
+   Q1: [问题1]
+   Q2: [问题2]
+
+3. 五段论证弧线（每段一句话）:
+   段1 TENSION: [一句话——建立什么矛盾/悖论？]
+   段2 WHY LIT CAN'T: [一句话——两条文献线的共同盲点是什么？]
+   段3 QUESTIONS: [Q1 + Q2]
+   段4 APPROACH: [数据+方法，不预设发现]
+   段5 CONTRIBUTION: [一般性贡献陈述，不预设发现]
 ```
 
----
-
-## Move 1: Stakes（3-5句）
-
-### 必须做到
-- 从一个**具体城市现象**切入，不是"随着城镇化快速发展..."
-- 用 1-2 个数字/趋势建立 urgency
-- 首段最后一句：暗示你的理论透镜。"This pattern raises questions about [你的理论关心的核心问题]"
-
-### 不能做的
-- ❌ "Urbanization has accelerated rapidly in recent decades..." — 所有中国城市论文都用这句
-- ❌ 列举政策文件
-- ❌ 在 Move 1 就开始引用大量文献 — 这是建立 stakes，不是建立文献背景
-
-### 基于宪法的定制指令
-- 如果理论透镜是[空间正义] → Move 1 从"谁得到了什么"的角度切入
-- 如果理论透镜是[环境正义] → Move 1 突出环境资源的分配不均
-- 如果理论透镜是[社会韧性] → Move 1 从"谁更脆弱"切入
+**自检清单（输出前逐项打勾）**:
+- [ ] §2 核心命题里有没有出现"周末"？如果有 → 删掉，§2 写错了
+- [ ] 段 3 的问题是不是 ≤ 2 个？
+- [ ] 段 4/5 有没有 "We find that..." 或任何具体发现？如果有 → 删掉
+- [ ] 如果论文有独立 Lit Review 节，段 2 是否 ≤ 1 段？
+- [ ] 是否加载了 `journals/<target>.md` 的特调规则？
 
 ---
 
-## Move 2: Gap（3-5句，最核心）
+## 引言的任务
 
-### 必须做到
-- 精确陈述：谁做了A（用[方法]在[城市]），谁做了B — 但没人做A+B
-- 每句引用对应一篇或多篇具体论文（来自宪法§5 竞品坐标）
-- Gap 不是"few studies have examined..."，而是"[A] 和 [B] 两条文献线从未交叉"
-
-### 基于 Gap 类型的定制指令
-
-**如果是"新组合"型 Gap**:
-"Prior work has [documented A] (refs), and separately [shown B] (refs).
-However, whether and how [A and B interact/relate] remains unclear,
-because [why existing approaches can't connect them]."
-
-**如果是"新语境"型 Gap**:
-"While [mechanism] has been documented in [Western cities / other contexts] (refs),
-whether it extends to [your context], where [institutional difference],
-remains untested."
-
-**如果是"新数据"型 Gap**:
-"Existing studies of [X] have relied on [data with known limitation] (refs),
-which [cannot capture / systematically biases] [key variable].
-[New data] offers [capability] that enables us to [new analytical possibility]."
-
-### 不能做的
-- ❌ 笼统的"few studies have examined X"
-- ❌ 引用虚构论文
-- ❌ 只引用支持你的论文 — 必须引用最接近的竞品（它们可能是"部分接近但不完全一样"的）
+引言不是"介绍背景"。引言是**建立你的论文不可或缺的五段论证弧线**。
+每段只有一个任务。每段创造下一段的需要。
 
 ---
 
-## Move 3: 贡献声明（2-3句）
+## 通用五段模板
 
-### 必须做到
-- "Here we..." 开头
-- 预览方法（what we did）+ 主要发现（what we found，方向+量级）
-- 发现的陈述必须有方向（increase/decrease/widen/narrow）和量级
+### 段 1: TENSION（建立张力）
 
-### 基于宪法的定制指令
-- 贡献类型是[新组合] → "Here we bridge [A] and [B] by [approach]..."
-- 贡献类型是[新语境] → "Here we test whether [mechanism] extends to [context]..."
-- 贡献类型是[新数据] → "Here we use [new data] to revisit [established question]..."
+**任务**: 建立一个矛盾、悖论或未被检验的假设。不是描述背景。
+
+**句法骨架**:
+```
+[领域] has been built on [premise/assumption]. [Evidence of investment/scale].
+Yet [premise] does not guarantee [outcome], because [missing dimension].
+For [specific group/context], [the consequence]. [This gap/tension] is the
+starting point of this study.
+```
+
+**反模式**:
+- ❌ "With the rapid development of urbanization..." — 万能模板
+- ❌ "X is an important issue that affects many people..." — 没有张力
+- ❌ 在此描述城市空间结构、产业地理 — 属于 Section 3
+- ❌ 列举四个角色逐一描写 — 1 个通用案例即可
+
+**自检**: 如果审稿人读完第一段只说"嗯，我知道了"而不是"有意思，然后呢？"——张力不够。
 
 ---
 
-## 宪法一致性检查（写完引言后）
+### 段 2: WHY EXISTING RESEARCH CANNOT RESOLVE IT（文献不能解决的原因）
 
-□ Move 2 的每一篇引用是否都在宪法§5 竞品坐标中有位置？
-□ Move 3 的贡献声明是否和宪法§6 一致？
-□ 引言是否在为核心命题铺垫？
-□ 首段最后一句是否暗示了理论透镜？
+**任务**: 说明为什么现有文献无法回应该张力。不是写小文献综述。1-2 句即可。
+
+**句法骨架**:
+```
+This [gap/tension] persists because the [N] bodies of research that bear on it
+[share a common limitation / have not treated X as Y]. [Body A] has established
+[findings] (refs), yet [limitation: what it collapses / misses / controls away].
+[Body B] has documented [findings] (refs), yet [limitation: how it treats the
+key variable]. As a result, [the specific question] remains open.
+```
+
+**关键规则**:
+- 如果论文有独立 Literature Review 节，段 2 最多 1-2 句点出两条文献线的共同盲点
+- 不要在段 2 引用大量论文——详细论证留给 Section 2
+- 不要在此列举谁做了什么——这是 Section 2 的工作
+
+**反模式**:
+- ❌ "Existing research is not well equipped to answer this question, because..." — 元论述
+- ❌ 用 2-3 段写小文献综述 — 审稿人读到 Section 2 会感到重复
+
+---
+
+### 段 3: QUESTIONS（明确研究问题）
+
+**任务**: 用 1-2 个显式问题或假设陈述你研究要回答什么。**必须 bold**，让审稿人一眼看到。
+
+**句法骨架（问题型）**:
+```
+This study therefore asks [N] questions. First, does [X] constitute [Y]? That is,
+[operationalized version of the question]? Second, if [X] does [Y], what specific
+[outcomes] does it shape, and how do these effects manifest in [observable patterns]?
+```
+
+**句法骨架（假设型）**:
+```
+This study tests [N] hypotheses. H1: [X] is an independent dimension of [Y],
+producing differences not reducible to [Z]. H2: the effect of [X] is dimensionally
+selective, concentrated on [specific outcomes] rather than uniform.
+```
+
+**关键规则**:
+- 必须是**可检验的**命题，不是"我们想了解..."
+- 1-2 个问题，不多于 2 个
+- 问题必须在前两段建立的张力中自然产生
+- **不要预设答案**——问题里不要包含"我们发现周末很重要"之类的结果
+
+**反模式**:
+- ❌ 问题藏在段落里 — 审稿人找不到
+- ❌ 问题超过 2 个 — 论文聚焦不够
+- ❌ 问题里包含了具体发现 — 那是 Result，不是 Question
+
+---
+
+### 段 4: APPROACH（如何回答）
+
+**任务**: 描述数据、方法和分析步骤。**不预设结果。**
+
+**句法骨架**:
+```
+To answer these questions, we draw on [data] from [N] [subjects] in [city].
+[Subjects] are classified by [X] using [method] on [N] dimensions: [list].
+[Supporting analyses: spatial mapping, measurement, validation, extraction,
+quantification] (refs).
+```
+
+**关键规则**:
+- 覆盖全文所有方法步骤：分类→职住空间→活动空间测度→独立效应检验→模式提取→偏好量化
+- 每个步骤 1 句，不展开方法论细节
+- 不要在此报告发现
+
+---
+
+### 段 5: CONTRIBUTION（一般性贡献陈述）
+
+**任务**: 陈述论文贡献。**不预设具体发现。**用 "tests whether", "demonstrates an approach", "contributes to understanding" 等一般性措辞。
+
+**句法骨架**:
+```
+By addressing these questions, this study contributes to [field] in [N] ways.
+First, it tests whether [X] constitutes [Y] independent of [Z], and whether its
+effects are uniform or selective. Second, by combining [methods] within a single
+empirical design, it demonstrates an approach that makes [research area]
+empirically tractable—an approach applicable beyond [this specific context].
+```
+
+**反模式**:
+- ❌ "We find that weekend time is the decisive parameter..." — 这是 Result，不是 Contribution 陈述
+- ❌ "Our findings suggest..." — 结论还在改，引言不应预设
+
+---
+
+## 宪法一致性检查
+
+□ 段 1 的张力是否对应宪法 §1（种子）和 §2（核心命题）？
+□ 段 2 的文献盲点是否对应宪法 §5（竞品坐标）的 Gap 类型？
+□ 段 3 的问题是否直接来自宪法 §2 的核心命题？
+□ 段 4 的方法是否覆盖了宪法 §4（逻辑链）的全部环节？
+□ 段 5 的贡献是否对应宪法 §6（贡献声明）？
+□ 全文没有预设宪法中标记为 [tentative] 的发现？
