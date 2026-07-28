@@ -24,9 +24,9 @@ A Claude Code skill for urban studies research — from idea to Q1 manuscript. C
 
 | Version | Directory | Description |
 |---------|-----------|-------------|
-| **v3.0** | [`v2.0/`](v2.0/) | Hard gates, phrasebook, pre-writing checkpoints, RQ design framework. **(Current)** |
-| **v2.0** | [`v2.0/`](v2.0/) | Spiral-loop architecture with constitution-driven research engine. |
-| **v1.0** | [`v1.0/`](v1.0/) | Original linear pipeline. |
+| **v3.0** | [`v3.0/`](v3.0/) | Hard gates, phrasebook, pre-writing checkpoints, RQ design framework. **(Current)** |
+| **v2.0** | [`v2.0/`](v2.0/) | Spiral-loop architecture with constitution-driven research engine. Six entry points, strategic briefs, 7 themes, Cities journal guide. |
+| **v1.0** | [`v1.0/`](v1.0/) | Original linear pipeline. Objects taxonomy, core knowledge base, writing guides. |
 
 ---
 
