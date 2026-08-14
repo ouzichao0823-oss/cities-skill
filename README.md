@@ -1,6 +1,6 @@
 # Cities Manuscript Engine
 
-A Claude Code skill for urban studies research — from idea to Q1 manuscript. Constitution-driven spiral architecture. Zotero-powered competitive intelligence.
+A Claude Code skill for urban planning research — an end-to-end system for Q1 manuscripts, built on a constitution-driven spiral architecture. Not a writing assistant: a research design engine that validates and corrects your research design at every step, from vague interest to publishable paper. Zotero-powered competitive intelligence.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)](https://github.com/ouzichao0823-oss/cities-skill/releases)
