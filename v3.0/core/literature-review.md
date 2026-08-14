@@ -74,6 +74,8 @@
 | **新方法** | 用不同方法揭示同一问题的不同维度 | "While prior studies rely on [old method] which assumes [limitation], we apply [new method] to capture [new dimension]..." |
 | **新语境** | 将已验证的机制在新城市/国家/制度中检验 | "Whether [established mechanism] extends to [new context], where [institutional difference] may alter the relationship, remains untested..." |
 | **新组合** | 将两个已有但分离的文献线合并 | "These two strands of literature—[A] and [B]—have developed in parallel. We bridge them by [approach]..." |
+
+> ⚠️ **[DATE] 真实语料核查**：上表"新组合"是**贡献类型分类**（你提供了什么贡献），不是 **Gap 句写法**。真实论文的 Gap 句几乎全是单线推进式（传统聚焦 A → 忽视/缺陷 B → 本文做 C）；"两条文献线相互承认但交汇点/从未交叉"的写法在真实语料中不存在。跨线研究（如时间使用 × 活动空间）也只以"忽视 B"单线表述。贡献声明可以说 "we bridge two strands"，但 Gap 句不能用"两线未合并"结构。Gap 写法详见 `journals/cities/01-introduction.md` 第三节（[DATE] 重写）。
 | **新问题** | 提出一个此前未被问过的问题（风险最高，回报最大） | "While existing work has focused on [X], we ask a different question: [Y]?" |
 
 ---

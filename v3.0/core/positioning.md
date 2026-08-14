@@ -60,12 +60,11 @@ no study has [done A+B] with [your method] in [your context]."
 
 ## 实战：用 Zotero 做竞品分析
 
-```python
-# 快速竞品扫描：搜相似论文
-import sqlite3
-conn = sqlite3.connect('/path/to/your/zotero.sqlite')  # copy it first!
-# 按主题词 + 方法词 + 城市类型搜索
-# 输出：论文列表 + 对每条逻辑链的位置标注
+```
+快速竞品扫描：搜相似论文
+  → Zotero MCP (<ZOTSEEK_PORT>/mcp): 按主题词 + 方法词 + 城市类型搜索
+  → ZotSeek (<ZOTSEEK_PORT>/zotseek/mcp): 语义检索相关段落
+  → 输出：论文列表 + 对每条逻辑链的位置标注
 ```
 
 竞品分析应输出一个简洁的判断：

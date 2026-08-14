@@ -1,4 +1,4 @@
-# Cities Manuscript Engine v3
+# Cities Manuscript Engine
 
 A Claude Code skill for urban studies research — from idea to Q1 manuscript. Constitution-driven spiral architecture. Zotero-powered competitive intelligence.
 
@@ -11,12 +11,12 @@ A Claude Code skill for urban studies research — from idea to Q1 manuscript. C
 
 | Feature | Description |
 |---------|-------------|
-| **Hard Gates** | 4 mandatory checkpoints (constitution read, citation verify, thesis alignment, CN-EN sync) — cannot be skipped |
-| **Trigger Keywords** | Explicit Chinese + English triggers with intent-to-entry mapping |
-| **Cities Phrasebook** | 40+ sentence templates extracted from 97 real Cities papers (2020-2026) |
-| **Pre-Writing Checklists** | Every section brief now requires a mandatory pre-check before output |
-| **Paragraph Skeletons** | Fill-in-the-blank argument structures for lit review paragraphs |
-| **Research Question Design** | Peters (2025) *Nature Human Behaviour* 4-phase framework distilled |
+| **Journal-specific writing guides** | Chapter-by-chapter guides (abstract → conclusion) extracted sentence-by-sentence from 150+ real Cities papers — every judgment backed by a real example you can verify |
+| **Citation fidelity audit protocol** | Three-tier citation review: existence check → content-fidelity grading (EXACT / SUBSTANTIAL / PARTIAL / OVERSTATEMENT / MISMATCH / UNVERIFIABLE) → research-design quality assessment |
+| **Research design pattern library** | 6 reusable quantitative urban design patterns, each with matched methods and pitfalls |
+| **Strategic briefs** | Pre-writing briefs generated from the constitution — what to write, what to exclude, who to cite, and why |
+| **7 theme modules** | Inequality, mobility, environment, resilience, housing, health + a customizable template |
+| **Zotero competitive intelligence** | Query your local library (ZotSeek semantic search + LLM extraction) to position your paper against the closest 3–5 papers |
 
 ---
 
@@ -24,7 +24,7 @@ A Claude Code skill for urban studies research — from idea to Q1 manuscript. C
 
 | Version | Directory | Description |
 |---------|-----------|-------------|
-| **v3.0** | [`v3.0/`](v3.0/) | Hard gates, phrasebook, pre-writing checkpoints, RQ design framework. **(Current)** |
+| **v3.0** | [`v3.0/`](v3.0/) | Journal-specific writing guides, citation audit protocol, design patterns. **(Current)** |
 | **v2.0** | [`v2.0/`](v2.0/) | Spiral-loop architecture with constitution-driven research engine. Six entry points, strategic briefs, 7 themes, Cities journal guide. |
 | **v1.0** | [`v1.0/`](v1.0/) | Original linear pipeline. Objects taxonomy, core knowledge base, writing guides. |
 
@@ -40,8 +40,8 @@ cp -r cities-knowledge-graph ~/.claude/skills/
 # See SETUP.md for detailed instructions
 
 # Start a conversation
-"我想研究城市通勤与活动空间的关系"
-"I want to study urban mobility and time use"
+"我想研究城市住房可负担性与人口流动的关系"
+"I want to study park accessibility and health equity"
 ```
 
 ---
@@ -49,20 +49,22 @@ cp -r cities-knowledge-graph ~/.claude/skills/
 ## Architecture
 
 ```
-constitution.md  ←  every conversation starts and ends here (GATE-1: mandatory read)
+constitution.md  ←  every conversation starts and ends here (mandatory first read)
        │
-       ├── Entry A: Vague interest → RQ generation (Peters 4-phase framework)
+       ├── Entry A: Vague interest → RQ generation
        ├── Entry B: Have data → capability matching
        ├── Entry C: Have literature → competitive positioning (Zotero corpus)
        ├── Entry D: Have results → reverse inference
-       ├── Entry E: Write section → strategic brief (with pre-check) → execute
-       └── Entry F: Full audit → consistency check
+       ├── Entry E: Write section → strategic brief → execute
+       ├── Entry F: Full audit → consistency check
+       └── Entry G: Reference mining / citation audit → fidelity grading
 
-Hard Gates (cannot be skipped):
-  GATE-1: Read constitution.md at conversation start
-  GATE-2: Verify every citation against Zotero before use
-  GATE-3: Check paragraph alignment with core thesis before output
-  GATE-4: Synchronize Chinese-English before bilingual output
+Core principles (cannot be skipped):
+  PRINCIPLE-0: Check the Zotero library first for any literature/citation/fact task
+  PRINCIPLE-1: Read constitution.md at conversation start
+  PRINCIPLE-2: Verify every citation against Zotero before use
+  PRINCIPLE-3: Generate a strategic brief before writing any section
+  PRINCIPLE-4: Delegate to specialized skills (polish / figure / citation / search)
 ```
 
 ---
@@ -75,35 +77,42 @@ Hard Gates (cannot be skipped):
 Each theme includes: sub-topics, core RQ templates, methodology notes, narrative logic, **writing patterns extracted from real papers**.
 
 ### Cities Journal Guide
-Full chapter-by-chapter guide extracted from **97 Cities papers** (2020-2026):
-- Introduction: 6 opening strategies, 5-paragraph template, gap phrase library
-- Literature Review: citation density rules, must-exclude checklist, argument skeleton
-- Methods: data source table template, method-question matching pattern
-- Results: H3 naming rules, cognitive progression structure
-- Discussion: 5-paragraph structure, literature dialogue patterns, policy implication rules
-- **Phrasebook**: 40+ fill-in-the-blank sentence templates with real examples
+Full chapter-by-chapter guide extracted from **150+ Cities papers**:
+- Abstract: six-part structure, case-city anchoring, planning takeaway
+- Introduction: opening strategies, gap phrasing, contribution skeleton
+- Literature Review: citation density, must-exclude checklist, argument skeleton
+- Data: mobile signaling / census / survey writing patterns, chain filtering
+- Methods: indicator construction, clustering, model justification
+- Study Area: three-reason site justification
+- Results: cognitive progression, group-comparison reporting
+- Discussion: literature dialogue patterns, policy implication rules
+- Conclusion: contribution statement, boundary declarations
 
-### Six Entry Points
-Each entry has a dedicated instruction file with step-by-step workflow.
+### Citation Fidelity Audit Protocol
+Three-tier review so every citation is verifiable:
+1. Existence check — is it really in your library?
+2. Content-fidelity grading — does the paper actually support the claim?
+3. Research-design quality assessment — validity / causality / construct
+
+### Six Entry Points (+ reference mining)
+Each entry has a dedicated instruction file with a step-by-step workflow.
 
 ### Progressive Loading
-~200 lines base → up to ~850 with full context. Only loads what's needed.
+~170 lines base → up to ~900 with full context. Only loads what's needed.
 
 ---
 
 ## Requirements
 
-- Claude Code (any model; optimized for DeepSeek with mechanical checks)
+- Claude Code (works with any model; optimized for a local LLM + API-model two-tier setup)
 - Zotero (optional — enables competitive analysis against your local paper library)
-- ~852 Q1 urban studies papers in the maintainer's Zotero library serve as the pattern extraction corpus
 
 ---
 
 ## Installation Methods
 
 1. **Manual**: Copy to `~/.claude/skills/cities-knowledge-graph/`
-2. **Plugin** (coming soon): `/plugin marketplace add ouzichao0823-oss/cities-skill`
-3. **Claude.ai Project**: Import from GitHub URL
+2. **Claude.ai Project**: Import from GitHub URL
 
 ---
 
@@ -121,5 +130,3 @@ Each entry has a dedicated instruction file with step-by-step workflow.
 ## License
 
 MIT — free to use, modify, and distribute.
-
-Built with 97 Cities papers, 852+ Q1 urban studies papers, and countless rounds of real manuscript writing.

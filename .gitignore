@@ -7,3 +7,6 @@ constitution.md.active
 # OS files
 .DS_Store
 Thumbs.db
+
+# Archive snapshots (not tracked)
+*.rar

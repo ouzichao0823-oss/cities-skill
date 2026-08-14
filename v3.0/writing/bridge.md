@@ -13,6 +13,8 @@
 | 大规模系统文献检索 | `nature-academic-search` | 跨数据库的检索策略 |
 | 制作期刊要求的图表 | `nature-figure` | 配色和排版规范 |
 | Nature 格式引用插入 | `nature-citation` | 数字上标引用 |
+| Zotero 库段落级语义检索 | **ZotSeek MCP** | `http://localhost:<ZOTSEEK_PORT>/zotseek/mcp` |
+| 句子级精准引用定位 | **Paper Compare Local** | `venv\Scripts\python.exe server.py` |
 
 ---
 

@@ -62,6 +62,8 @@
 | Gap 类型 | 你的情况 | 审稿人怎么看 |
 |---------|--------|------------|
 | **文献线未交叉** | A线成熟，B线成熟，但从未有人连接A+B | "novel synthesis" — 中等风险，高回报 |
+
+> ⚠️ **[DATE] 真实语料核查**：这是**贡献类型**（novel synthesis 确实是真实存在的贡献），但不是 **Gap 句写法**——真实论文的 Gap 句几乎全是单线推进式（传统聚焦 A → 忽视/缺陷 B → 本文做 C），"A线成熟+B线成熟+从未有人连接"的结构在真实语料中不存在。Gap 句写法详见 `journals/cities/01-introduction.md` 第三节。
 | **新语境检验** | 已有机制在中国/你的城市未被验证 | "extending theory to new context" — 低风险，中回报 |
 | **新数据回答老问题** | 你的数据粒度/时间跨度有质的优势 | "using novel data" — 低风险，中回报 |
 | **新方法揭示新维度** | 已有方法不能捕捉你的现象 | "methodological advance" — 高风险，高回报 |
@@ -93,9 +95,51 @@ This is important because [why filling this gap changes something]."
 
 ---
 
+### 6. 环境特调文献验证（2026-07 新增）
+
+当用户已完成初稿、需要验证文献支撑时，启动三层交叉验证：
+
+```
+Layer 1 — 引文存在性检查
+  对论文中每条 (Author, Year) 引用:
+    → Zotero MCP (<ZOTSEEK_PORT>/mcp): 按作者姓+年份检索，读回 title/journal/date/DOI
+    → 标记: ✅已入库 / ⚠️未入库需补充 / ❌库中有但匹配错误
+    
+Layer 2 — 主张-文献支撑映射
+  对论文中每个有事实性主张的句子:
+    → ZotSeek MCP: 语义检索最相近的段落
+    → Paper Compare Local: 句子级验证主张是否有文献支撑
+    → 标记: ✅有直接引用 / ⚠️有相近引用但非精确匹配 / ❌无支撑
+
+Layer 3 — 竞品坐标闭合性
+  宪法 §5 竞品坐标中的论文:
+    → 逐篇检查是否在引言和讨论中都被引用
+    → 引言出现但讨论消失 → 需补入讨论
+    → 讨论出现但引言未出现 → 需补入引言或从讨论删除
+    → 宪法 §5 有但论文全篇未出现 → 严重疏漏
+```
+
+**非主题句文献验证规则**：
+
+非主题句（段落中间的解释句、机制推测句、背景铺垫句）最容易缺文献。每段标注：
+- **T** (Topic sentence): 段首句，宣告段落论证方向
+- **E** (Evidence sentence): 引用文献支撑的句子
+- **I** (Interpretation sentence): 作者自己的解读，不强制需要引用
+- **C** (Claim without citation): 事实性主张但无引用 → **必须补充**
+
+**环境工具映射**：
+| 验证任务 | 工具 | 命令/端点 |
+|---------|------|----------|
+| 引文入库验证 | Zotero MCP | `http://127.0.0.1:<ZOTERO_MCP_PORT>/mcp` |
+| 段落级语义验证 | ZotSeek MCP | `http://localhost:<ZOTSEEK_PORT>/zotseek/mcp` |
+| 句子级精准定位 | Paper Compare Local | `venv\Scripts\python.exe server.py` |
+| 缺漏文献补充 | nature-academic-search | Skill 桥接 |
+
+---
 ## 输出
 
 1. 论文拆解（每篇的逻辑链）
 2. 竞品矩阵
 3. Gap 类型判断 + 精确陈述
 4. **宪法写入**：竞品坐标、Gap 类型、贡献声明、逻辑链中相关环更新为 confirmed
+5. **文献支撑审计报告**（如已进入写作阶段）：引文存在性、主张-文献映射、非主题句缺口、竞品闭合性

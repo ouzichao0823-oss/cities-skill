@@ -2,13 +2,15 @@
 
 ## 库规模
 
-- **位置**: your Zotero data directory
-- **数据库**: `zotero.sqlite` (locked while Zotero runs — copy it to query)
-- **期刊论文总数**: depends on your library
-- **Q1 城市研究期刊论文**: depends on your collection
-- **本地 PDF**: depends on your library
+- **位置**: 你的 Zotero 数据目录（Zotero 官方 MCP Server 会自动定位，无需手填路径）
+- **访问方式**: Zotero 官方 MCP Server（HTTP，见 `zotero-query.md`）
+- **期刊论文总数**: 取决于你的库（本 skill 的语料库构建时含约 2800+ 篇期刊论文）
+- **Q1 城市研究期刊论文**: 取决于你的库（构建语料时约 800+ 篇，来自 ~30 种 SCI Q1 期刊）
+- **本地 PDF**: 取决于你的库（附件在 `storage/{attachmentKey}/` 下）
 
-## 主要期刊覆盖
+> 以上数字仅描述**构建本 skill 写作语料时所用库**的规模，不是对你库的要求。你的库规模不同不影响使用；写作判断仍基于 `journals/` 里已提炼好的真实语料。
+
+## 主要期刊覆盖（构建语料时各期刊论文数）
 
 | 期刊 | 论文数 | 领域 | 典型主题 |
 |------|--------|------|---------|

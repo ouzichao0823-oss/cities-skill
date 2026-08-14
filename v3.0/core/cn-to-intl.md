@@ -49,10 +49,10 @@
 ## 从中文摘要到英文摘要的转换示例
 
 **中文原文风格**：
-> "本文以深圳市为例，基于多源数据，采用空间分析方法，研究了城市商业绅士化的空间格局及其影响因素。结果表明，地铁开通、人口结构和政策引导是主要驱动因素。研究对城市规划实践具有参考价值。"
+> "本文以某市为例，基于多源数据，采用空间分析方法，研究了城市商业绅士化的空间格局及其影响因素。结果表明，地铁开通、人口结构和政策引导是主要驱动因素。研究对城市规划实践具有参考价值。"
 
 **转换为国际议题**：
-> "How does commercial gentrification unfold spatially in rapidly urbanizing cities? Using Shenzhen as a laboratory—where metro expansion, migrant inflow, and urban renewal policies create sharp spatial variation—we combine POI data with street-view imagery to track commercial transformation at the neighborhood level. We find that metro station opening predicts a 23% increase in experiential consumption venues within 800m, but this effect is contingent on pre-existing neighborhood socioeconomic composition. These findings challenge the assumption that transit investment uniformly triggers gentrification, instead revealing a conditional mechanism that depends on local social fabric."
+> "How does commercial gentrification unfold spatially in rapidly urbanizing cities? Using a rapidly urbanizing Chinese city as a laboratory—where metro expansion, migrant inflow, and urban renewal policies create sharp spatial variation—we combine POI data with street-view imagery to track commercial transformation at the neighborhood level. We find that metro station opening predicts a 23% increase in experiential consumption venues within 800m, but this effect is contingent on pre-existing neighborhood socioeconomic composition. These findings challenge the assumption that transit investment uniformly triggers gentrification, instead revealing a conditional mechanism that depends on local social fabric."
 
 **差异总结**：
 - ❌ "采用空间分析方法" → ✅ 说了具体用了什么数据和为什么

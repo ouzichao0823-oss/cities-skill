@@ -57,3 +57,90 @@
 2. 段内是否有超过 5 个句子？（如果超过，考虑拆分）
 3. 相邻句子是否在说同一件事？（如果跳跃，加连接词）
 4. 是否有笼统形容词（comprehensive, in-depth, novel）没有数据支撑？
+
+---
+
+## 引用位置规范 (Citation Placement)
+
+> **核心原则: 论断在前，引用在后。** 你在构建论证，不是在写文献摘要。让读者先知道你在说什么，再用括号告诉他们谁知道。
+
+### 标准模式: 论断 → (引用)
+
+```
+✅ "Long working hours increase the risk of cardiovascular disease 
+   (Bannai et al., 2016; Kivimäki et al., 2015)."
+
+❌ "Bannai et al. (2016) and Kivimäki et al. (2015) found that long 
+   working hours increase the risk of cardiovascular disease."
+```
+
+### 什么时候可以把作者名放在句子里
+
+**可以保留的少数情况：**
+
+1. **奠基性人物** — 一个人的名字就是一条学术脉络
+   ```
+   ✓ "Activity space is rooted in Hägerstrand's (1970) time geography."
+   ✓ "Kwan (1999) operationalized the space-time prism for individual accessibility."
+   ```
+
+2. **点名讨论某一篇特定论文的具体贡献或局限**
+   ```
+   ✓ "Schönfelder and Axhausen (2003) proposed this hypothesis, though their 
+      own empirical test did not detect significant group differences."
+   ```
+
+3. **讨论中做文献对话（对比/挑战/桥接）**
+   ```
+   ✓ "Consistent with Li et al. (2023), we find... extending this to..."
+   ✓ "In contrast to Wang et al. (2022), who found X, we observe Y."
+   ```
+
+**必须改写的反面模式：**
+
+```
+❌ "Author A (Year) found X. Author B (Year) showed Y. Author C (Year) reported Z."
+   → 这是带注释的文献目录，不是论证。
+
+❌ "Author A (Year), using [method] in [context], demonstrated that..."
+   → 把方法细节塞进引用句中，显得臃肿。改为先陈述发现，括号引用。
+
+❌ "According to Author A (Year), ..." / "As shown by Author B (Year), ..."
+   → 去掉引导词。"According to" 是多余的——括号本身就等于"据XX"。
+```
+
+### 改写对照
+
+| 原句 (Author-first) | 改写 (Claim-first) |
+|---|---|
+| "Oostenbach et al. (2023) showed that longer commutes are associated with food outlet visits concentrating closer to home." | "Longer commutes are associated with food outlet visits concentrating closer to home (Oostenbach et al., 2023)." |
+| "Gao et al. (2025), using mobile phone data from Nanjing, demonstrated that working patterns are the primary factor shaping weekend leisure." | "Working patterns are the primary factor shaping weekend leisure activity, as found in a study of fixed-location workers in Nanjing (Gao et al., 2025)." |
+| "Chatterjee et al. (2020), in a systematic review, confirmed robust associations between long commutes and lower leisure satisfaction." | "A systematic review confirmed robust associations between long commutes and lower leisure satisfaction (Chatterjee et al., 2020)." |
+| "Neutens et al. (2014) provided direct evidence: non-workers have larger activity spaces than full-time workers." | "Direct evidence confirms that non-workers have significantly larger potential activity spaces than full-time workers (Neutens et al., 2014)." |
+
+### 多引用整合
+
+多条引用支撑同一个论断时，不要拆成多个句子。合成一句：
+
+```
+✅ "Activity-space outcomes are multidimensional, with spatial extent, 
+   travel cost, visit intensity, and destination diversity capturing 
+   distinct facets of spatial behaviour (Patterson & Farber, 2015; 
+   Li et al., 2025)."
+
+❌ "Patterson and Farber (2015) reviewed activity-space measures 
+   and found they are multidimensional. Li et al. (2025) also used 
+   four dimensions to measure activity space."
+```
+
+### 选择恰当的引用动词
+
+用中性、精确的动词，不夸大论文的实际贡献：
+
+| 论文实际做的 | 用这个词 | 避免 |
+|------------|---------|------|
+| 报告了统计关联 | found, reported, observed | demonstrated, proved |
+| 提出了理论框架 | proposed, argued, suggested | established, confirmed |
+| 系统梳理了文献 | reviewed, synthesized | demonstrated, found |
+| 提供了支持性证据 | showed, provided evidence | proved, confirmed (除非真的是决定性证据) |
+| 可能的趋势/模式 | suggested, indicated | demonstrated, established |

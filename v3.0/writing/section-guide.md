@@ -6,28 +6,23 @@ Q1 英文论文每个章节都有明确的任务。不是"写满字数"，而是
 
 ## 引言 — 问题的发现和定义
 
-引言完成三个任务，缺一不可。但注意引言和文献综述的分工：
-**引言命名 Gap，文献综述论证 Gap。**
+引言完成三个任务，缺一不可：
 
 ### Move 1: 这个问题的 stakes 是什么？（3-5句）
 - 在城市尺度上，为什么这个问题重要？
 - 用 1-2 个数字或趋势建立 urgency
 - 不要从"随着城镇化快速发展..."开始——太泛。从一个具体的城市现象切入
-- 不要在此描述研究城市的空间结构、产业地理——属于 Section 3
 
-### Move 2: 已知什么，Gap 在哪里？（1-2句——仅命名Gap）
-> **如果论文有独立 Literature Review 节**：Move 2 压缩到 1-2 句。详细文献论证留给 Section 2。
-> 从 Cities 论文实测：绝大多数引言 Move 2 仅 1-2 句。
-
-- 一句话说清两条文献线的共同盲点
-- Gap 不是"few studies have examined..."，而是"两条线从未以这种方式交叉"
-- 不要在此引用大量文献——引文留给 Section 2
+### Move 2: 已知什么，Gap 在哪里？（最核心，3-5句）
+- 不要笼统说"few studies have examined..."
+- 精确陈述：谁做了A（用[方法]在[城市]），谁做了B——但没人用[你的方法/数据]在[你的语境]做A+B
+- 引用必须具体到论文，不能是"prior studies suggest..."
+- 这一段定义了你的竞争位置
 
 ### Move 3: 我们做了什么，发现了什么（2-3句）
-- "Using [data], we..." 开头（Cities 实测不用 "Here we..."）
+- "Here we..." 开头
 - 预览方法（what we did）和主要发现（what we found）
 - 发现必须有方向（increase/decrease/widen）和量级（百分比/倍数）
-- 末句暗示规划含义
 
 ---
 
@@ -56,19 +51,17 @@ Q1 英文论文每个章节都有明确的任务。不是"写满字数"，而是
 
 ## 讨论 — 与其他论文的对话
 
-讨论不是结果复述。讨论是**把你的发现放回引言建立的竞品地图中**。
+> **完整方法论见 `writing/discussion-guide.md`**（三层框架：总结自己→对话别人→启示他人；五段模板；政策建议公式；自查清单）。
+> 期刊特化句型库见 `journals/cities.md` 第八节。此处仅保留核心原则。
 
-### 六步结构
+讨论不是结果复述。讨论是**把你的发现放回引言建立的竞品地图中**。核心：
 
-1. **综合**（1段）：1-2句综合你的主要发现。"Together, our results show that..."
-2. **机制解释**（1段）：为什么会出现这个模式？不要重复结果（what），解释 mechanism（why/how）
-3. **与文献对话**（1段，最密集引用）：你的发现支持谁？挑战谁？填补了什么空白？
-   - 支持："Consistent with [Author], we find..."
-   - 挑战："In contrast to [Author]'s finding that..., our results suggest..."
-   - 填补："While [Author A] documented X and [Author B] showed Y, the mechanism linking them was unclear. Our results reveal..."
-4. **异质性与边界**（1段）：对谁/哪里/何时成立？不成立？
-5. **限制**（1段）：具体说，逐个限制对应一个补救或未来方向。不泛泛说"data limitations"
-6. **意义**（1段）：对城市意味着什么？命名具体的行动者（planners/transit agencies/policymakers）
+```
+三层框架（discussion-guide.md）:
+  底层 总结自己   → 提炼机制、命名概念、上升到理论
+  中层 对话别人   → 支持/挑战/细化/延伸（成组对话，不逐篇）
+  顶层 启示他人   → 行动者 + 具体行动 + 对应发现
+```
 
 ### 关键检查
 - 讨论中引用的文献，是否在引言中出现过？如果不是，引言应该补
