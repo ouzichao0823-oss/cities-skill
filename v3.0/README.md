@@ -41,8 +41,16 @@ v1.0 是线性流水线（设计→文献→写作）。v2.0 是螺旋循环—�
 
 ## 安装
 
-把本目录（`v3.0/`）复制为你的 skills 目录下的 `cities-knowledge-graph/` 即可。
-首次使用请按 `SETUP.md` 完成两件事：① 初始化 `constitution.md`（填入你自己的研究）；② 配置 Zotero 本地库连接。
+一键安装（推荐）：在仓库根目录运行
+
+```bash
+bash install.sh                                        # macOS / Linux
+powershell -ExecutionPolicy Bypass -File install.ps1   # Windows
+```
+
+脚本会自动：① 把 `v3.0/` 复制为 skills 目录下的 `cities-knowledge-graph/`；② 检测/拉取 Ollama 本地大模型；③ 生成 `model-config.md`。
+
+首次使用请按 `SETUP.md` 完成两件事：① 初始化 `constitution.md`（填入你自己的研究）；② 配置 Zotero 本地库连接。大模型配置见 `model-setup.md`。
 
 ## 版本
 

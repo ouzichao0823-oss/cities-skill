@@ -1,5 +1,7 @@
 # 连接你的文献库
 
+> 本 Skill 有两块本地配置：**大模型**（本地 Ollama 粗活 + 可选 API 精查）和**文献库**（本文）。大模型配置见 [`model-setup.md`](model-setup.md)，可一键完成：仓库根目录运行 `install.sh`（macOS/Linux）或 `install.ps1`（Windows）。
+
 本 Skill 的核心能力之一是**基于你本地的 Zotero 论文库进行竞品分析和文献定位**。以下是如何设置。
 
 ---

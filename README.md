@@ -33,11 +33,12 @@ A Claude Code skill for urban planning research — an end-to-end system for Q1 
 ## Quick Start
 
 ```bash
-# Install
-cp -r cities-knowledge-graph ~/.claude/skills/
+# 一键安装 + 配置大模型（自动装 skill、拉本地模型、生成 model-config.md）
+bash install.sh            # macOS / Linux
+# Windows PowerShell:  powershell -ExecutionPolicy Bypass -File install.ps1
 
 # Connect your Zotero library (optional but recommended)
-# See SETUP.md for detailed instructions
+# See v3.0/SETUP.md for detailed instructions
 
 # Start a conversation
 "我想研究城市住房可负担性与人口流动的关系"

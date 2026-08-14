@@ -30,6 +30,8 @@ description: >
 5. 结束时 → 宪法是否需要更新？→ 写回
 ```
 
+**大模型配置**：读 `model-config.md`（安装器生成）获取本地 Ollama 粗活模型 + 可选 API 精查模型；缺失时回退默认（本地 Ollama `qwen2.5:7b` + your API model）。详见 `model-setup.md`。
+
 ---
 
 ## 循环路由
@@ -154,6 +156,8 @@ cities-knowledge-graph/
 ├── SKILL.md                     ← 路由（你在这里）
 ├── constitution.md              ← 研究宪法（必须首先读取）
 ├── objects.md                   ← 研究对象分类学
+├── model-setup.md               ← 大模型配置（本地粗活 + API 精查）★新增
+├── model-config.example.md      ← 模型配置模板（复制为 model-config.md）
 │
 ├── entries/                     ← 循环入口
 │   ├── vague-interest.md        A: 模糊兴趣 → RQ生成
