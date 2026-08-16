@@ -3,7 +3,7 @@
 A Claude Code skill for urban planning research — an end-to-end system for Q1 manuscripts, built on a constitution-driven spiral architecture. Not a writing assistant: a research design engine that validates and corrects your research design at every step, from vague interest to publishable paper. Zotero-powered competitive intelligence.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-3.0.0-blue.svg)](https://github.com/ouzichao0823-oss/cities-skill/releases)
+[![Version](https://img.shields.io/badge/version-3.1.0-blue.svg)](https://github.com/ouzichao0823-oss/cities-skill/releases)
 
 ---
 
@@ -24,7 +24,8 @@ A Claude Code skill for urban planning research — an end-to-end system for Q1 
 
 | Version | Directory | Description |
 |---------|-----------|-------------|
-| **v3.0** | [`v3.0/`](v3.0/) | Journal-specific writing guides, citation audit protocol, design patterns. **(Current)** |
+| **v3.1** | [`v3.1/`](v3.1/) | Sanitized open-source release — removed author-specific research content, kept generic methodology and real-paper references. **(Current)** |
+| **v3.0** | [`v3.0/`](v3.0/) | Journal-specific writing guides, citation audit protocol, design patterns. |
 | **v2.0** | [`v2.0/`](v2.0/) | Spiral-loop architecture with constitution-driven research engine. Six entry points, strategic briefs, 7 themes, Cities journal guide. |
 | **v1.0** | [`v1.0/`](v1.0/) | Original linear pipeline. Objects taxonomy, core knowledge base, writing guides. |
 
@@ -38,7 +39,7 @@ bash install.sh            # macOS / Linux
 # Windows PowerShell:  powershell -ExecutionPolicy Bypass -File install.ps1
 
 # Connect your Zotero library (optional but recommended)
-# See v3.0/SETUP.md for detailed instructions
+# See v3.1/SETUP.md for detailed instructions
 
 # Start a conversation
 "我想研究城市住房可负担性与人口流动的关系"

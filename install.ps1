@@ -10,7 +10,7 @@ param(
 $ErrorActionPreference = "Stop"
 $SKILL_NAME = "cities-knowledge-graph"
 $SCRIPT_DIR = Split-Path -Parent $MyInvocation.MyCommand.Path
-$SKILL_SRC = Join-Path $SCRIPT_DIR "v3.0"
+$SKILL_SRC = Join-Path $SCRIPT_DIR "v3.1"
 $DEFAULT_MODEL = if ($env:MODEL) { $env:MODEL } else { "qwen2.5:7b" }
 
 Write-Host "== Cities Manuscript Engine 安装器 =="

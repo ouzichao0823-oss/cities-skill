@@ -8,7 +8,7 @@ set -euo pipefail
 
 SKILL_NAME="cities-knowledge-graph"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SKILL_SRC="$SCRIPT_DIR/v3.0"
+SKILL_SRC="$SCRIPT_DIR/v3.1"
 DEFAULT_MODEL="${MODEL:-qwen2.5:7b}"
 SKIP_MODEL=0
 
